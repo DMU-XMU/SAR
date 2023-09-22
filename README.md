@@ -7,6 +7,11 @@ Our code is modified based on:
 1. https://github.com/MIRALab-USTC/RL-CRESP.git 
 2. https://github.com/facebookresearch/deep_bisim4control.git 
 
+# Overview architecture of SAR
+[![SAR](https://github.com/DMU-XMU/SAR/blob/main/videos/map04-480p.mp4)]
+
+# Carla demo video
+[![Demo video](https://github.com/DMU-XMU/SAR/blob/main/img/frame.png)]
 
 ## install CARLA
 Please firstly install UE4.26.
