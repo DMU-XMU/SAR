@@ -7,12 +7,11 @@ Our code is modified based on:
 1. https://github.com/MIRALab-USTC/RL-CRESP.git 
 2. https://github.com/facebookresearch/deep_bisim4control.git 
 
-# Carla demo video
+# Cara training videos
 [![demo1](https://github.com/DMU-XMU/SAR/blob/main/videos/demo1.gif)]
-
 [![demo2](https://github.com/DMU-XMU/SAR/blob/main/videos/demo2.gif)]
 
-# IMG demo
+# IMG
 ![Demo img](https://github.com/DMU-XMU/SAR/blob/main/img/carla.png)
 
 ## install CARLA
