@@ -33,12 +33,12 @@ Install:
 pip install pygame
 pip install networkx
 ```
-# runing DMControl tasks
+# run DMControl tasks
 ```
 ./run.sh --agent curl --auxiliary sar --env dmc.cheetah.run
 ```
 
-# runing CARLA tasks
+# run CARLA tasks
 
 Terminal 1:
 ```
