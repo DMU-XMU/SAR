@@ -8,12 +8,12 @@ Our code is modified based on:
 2. https://github.com/facebookresearch/deep_bisim4control.git 
 
 # Carla demo video
-[![SAR](https://github.com/DMU-XMU/SAR/blob/main/videos/demo1.gif)]
+[![demo1](https://github.com/DMU-XMU/SAR/blob/main/videos/demo1.gif)]
 
-[![SAR](https://github.com/DMU-XMU/SAR/blob/main/videos/demo2.gif)]
+[![demo2](https://github.com/DMU-XMU/SAR/blob/main/videos/demo2.gif)]
 
 # IMG demo
-![Demo video](https://github.com/DMU-XMU/SAR/blob/main/img/carla1.pdf)
+![Demo img](https://github.com/DMU-XMU/SAR/blob/main/img/carla.png)
 
 ## install CARLA
 Please firstly install UE4.26.
