@@ -9,7 +9,7 @@ Our code is modified based on:
 
 # IMG
 ![Demo img](https://github.com/DMU-XMU/SAR/blob/main/img/carla.png)
-#  Training videos in Cara autonomous driving
+#  Training videos in Carla autonomous driving
 ![demo1](https://github.com/DMU-XMU/SAR/blob/main/videos/demo1.gif)
 ![demo2](https://github.com/DMU-XMU/SAR/blob/main/videos/demo2.gif)
 
