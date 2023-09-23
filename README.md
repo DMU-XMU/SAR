@@ -51,7 +51,7 @@ cd CARLA_0.9.6
 ./run.sh --agent curl --auxiliary sar --env carla.highway.map04
 ```
 
-# You can attacha tensorboard to monitor training by running:
+# You can attach a tensorboard to monitor training by running:
 ```
 tensorboard --logdir ./
 ```
