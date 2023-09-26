@@ -3,11 +3,7 @@
 
 This is the code of paper: **Sequential Action-Induced Invariant Representation for Reinforcement Learning**.
 
-Our code is modified based on: 
-1. https://github.com/MIRALab-USTC/RL-CRESP.git 
-2. https://github.com/facebookresearch/deep_bisim4control.git 
-
-# IMG
+# Carla images
 ![Demo img](https://github.com/DMU-XMU/SAR/blob/main/img/carla.png)
 #  Training videos in Carla autonomous driving
 ![demo1](https://github.com/DMU-XMU/SAR/blob/main/videos/demo1.gif)
@@ -55,3 +51,7 @@ cd CARLA_0.9.6
 ```
 tensorboard --logdir ./
 ```
+Our code is modified based on: 
+1. https://github.com/MIRALab-USTC/RL-CRESP.git 
+2. https://github.com/facebookresearch/deep_bisim4control.git 
+
