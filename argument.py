@@ -25,10 +25,10 @@ def parse_args():
     # training settings
     parser.add_argument('--num_sources', default=2, type=int)
     parser.add_argument('--dynamic', default=True, action='store_true')
-    parser.add_argument('--background', '-bg', default=False, action='store_true')
+    parser.add_argument('--background', '-bg', default=True, action='store_true')
     parser.add_argument('--camera', '-ca', default=False, action='store_true')
     parser.add_argument('--color', '-co', default=False, action='store_true')
-    parser.add_argument('--test_background', '-tbg', default=False, action='store_true')
+    parser.add_argument('--test_background', '-tbg', default=True, action='store_true')
     parser.add_argument('--test_camera', '-tca', default=False, action='store_true')
     parser.add_argument('--test_color', '-tco', default=False, action='store_true')
     parser.add_argument('--batch_size', default=128, type=int)
