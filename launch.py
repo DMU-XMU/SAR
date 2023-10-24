@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 import os
-#os.environ['MUJOCO_GL'] = 'egl'
+os.environ['MUJOCO_GL'] = 'egl'
 from pathlib import Path
 
 from common import utils, make_env
@@ -43,6 +43,7 @@ def run(args, device, work_dir, config):
 
     # Initialize Environment
     if domain == "dmc":
+        print("Runing DMC env...")
         train_envs, test_env, obs_dict = make_env.set_dcs_multisources(
             domain_name,
             task_name,
@@ -53,6 +54,7 @@ def run(args, device, work_dir, config):
             test_color=args.test_color,
             **config['setting']
         )
+        obs_shape, pre_aug_obs_shape = obs_dict
     elif domain == "carla":
         print("Runing carla env...")
         env = CarlaEnv(
@@ -69,20 +71,21 @@ def run(args, device, work_dir, config):
         train_envs = []
         train_envs.append(env)
         test_env = train_envs
+        obs_shape, pre_aug_obs_shape = (9, 84, 420), (3, 84, 420)
 
     #obs_shape, pre_aug_obs_shape = obs_dict
     #print(obs_shape, pre_aug_obs_shape)
     action_shape = train_envs[0].action_space.shape
     action_limit = 1.0 #train_envs[0].action_space.high[0]
     # Initialize Replay Buffer
-    replay_buffer = BReplayBuffer(obs_shape=(3, 84, 420),
+    replay_buffer = BReplayBuffer(obs_shape=pre_aug_obs_shape,
                                   action_shape=action_shape,
                                   buffer_dir=buffer_dir,
                                   batch_size=args.batch_size,
                                   device=device,
                                   **config['buffer_params'])
 
-    config.update(dict(obs_shape=(9, 84, 420), batch_size=args.batch_size, device=device))
+    config.update(dict(obs_shape=obs_shape, batch_size=args.batch_size, device=device))
     config['algo_params'].update(dict(action_shape=action_shape,
                                       action_limit=action_limit,
                                       device=device))
