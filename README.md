@@ -30,7 +30,7 @@ pip install networkx
 ```
 # run DMControl tasks
 ```
-./run.sh --agent curl --auxiliary sar --env dmc.cheetah.run
+./run.sh --agent drq --auxiliary sar  --batch_size 256 --num_sample 256 --targ_extr 0 --env dmc.cheetah.run
 ```
 
 # run CARLA tasks
@@ -38,13 +38,13 @@ pip install networkx
 Terminal 1:
 ```
 cd CARLA_0.9.6
-bash CarlaUE4.sh -fps 20
+bash CarlaUE4.sh --RenderOffScreen --carla-rpc-port=2000 --fps=20
 ```
 
 Terminal 2:
 ```
 cd CARLA_0.9.6
-./run.sh --agent curl --auxiliary sar --env carla.highway.map04
+./run.sh --agent curl --auxiliary sar --batch_size 128 --num_sample 128 --targ_extr 1 --port 2000 --env carla.highway.map04
 ```
 
 # You can attach a tensorboard to monitor training by running:
