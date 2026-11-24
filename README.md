@@ -53,5 +53,16 @@ tensorboard --logdir ./
 ```
 Our code is modified based on: 
 1. https://github.com/MIRALab-USTC/RL-CRESP.git 
-2. https://github.com/facebookresearch/deep_bisim4control.git 
+2. https://github.com/facebookresearch/deep_bisim4control.git
+
+```bibtex
+@misc{liang2023sequential,
+      title={Sequential Action-Induced Invariant Representation for Reinforcement Learning}, 
+      author={Dayang Liang and Qihang Chen and Yunlong Liu},
+      year={2023},
+      eprint={2309.12628},
+      archivePrefix={arXiv},
+      url={https://arxiv.org/abs/2309.12628}, 
+}
+```
 
